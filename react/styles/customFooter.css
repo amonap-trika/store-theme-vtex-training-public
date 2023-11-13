@@ -1,0 +1,74 @@
+/*    Desktop Css Start */
+
+.footer_container{
+    padding: 20px;
+}
+
+.footer_container a , .footer_container a:visited {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.footer_container ul li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.footer_container {
+    font-family: inherit;
+    background-color: rgba(240,240,240,0.8) ;
+}
+
+
+.footerSocialMedia{
+  text-align: right;
+}
+
+
+.newsletter_block{
+  position:relative;
+}
+
+.newsletter_block svg{
+  position: absolute;
+  right: calc(100% - 57%);
+  bottom: 10px;
+}
+
+/*    Desktop Css End */
+
+
+/*    Mobile Css Start */
+
+
+@media only screen and (max-width: 639px) {
+  .newsletter_block , .newsletter_block input{
+    width: 100%;
+  }
+
+  .newsletter_block svg{
+    right: 5%;
+  }
+  
+  .footer_container legend{
+    font-size:20px;
+  }
+}
+
+.toggleIconInFooter{
+  position: relative;
+  margin: 20px 0px;
+}
+
+.toggleIconInFooter button{
+  position: absolute;
+  font-weight: 700;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  right: 2px;
+  bottom: 0px;
+}
+
+  /*    Mobile Css End */
