@@ -5,6 +5,12 @@
   "footer-mobile": {
     "component": "FooterMobile"
   },
+  "megamenu-desktop": {
+    "component": "MegamenuDesktop"
+  },
+  "megamenu-mobile": {
+    "component": "MegamenuMobile"
+  },
   "contact-us-list": {
     "component": "ContactUsList"
   }

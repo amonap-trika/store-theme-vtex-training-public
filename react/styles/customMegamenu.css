@@ -1,0 +1,111 @@
+.megamenu_container{
+    position: relative;
+}
+
+.megamenu_container ul{
+    list-style-type: none;
+}
+
+.megamenu_container a{
+    text-decoration: none;
+}
+
+
+/* Megamenu Desktop Start */
+
+.megamenu_navbar {
+    background-color: #a42627;
+}
+
+.megamenu_navbar ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.megamenu_navbar li {
+    display: inline-block;
+    border-left: 1px solid #000;
+}
+
+.megamenu_navbar li:last-child {
+    border-right: 1px solid #000;
+}
+  
+.megamenu_navbar li a {
+    color: #fff;
+    display: list-item;
+    text-transform: uppercase;
+}
+  
+.megamenu_navbar li a:hover:not(.active) {
+    background-color: #ddd;
+    color: #a42627;
+}
+
+.megamenu_section{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    top:40px;
+}
+
+.megamenu_section a{
+    color: #000;
+    display: list-item;
+}
+
+.megamenu_section a:hover{
+    color: #a42627;
+}
+
+
+.megamenu_section ul.secondlevel a:hover{
+    font-weight: 600;
+}
+
+
+.megamenu_section ul.firstlevel, .megamenu_section ul.secondlevel{
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.megamenu_section ul.firstlevel li, .drower_section li{
+    border-bottom: 1px solid #000;
+    text-transform: capitalize;
+    font-weight: 700;
+    clear: both;
+    display: block;
+}
+
+.megamenu_section ul.firstlevel li span, .drower_section li span{
+    float: right;
+}
+
+/* Megamenu Desktop End */
+
+/* Megamenu Mobile Start */
+
+.drower_section a{
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.drower_section li,.drower_section ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.drower_activated_link a {
+    text-decoration:underline;
+    color: #a42627;
+    display: block;
+    font-weight: 700;
+}
+
+
+/* Megamenu Mobile End */
+
