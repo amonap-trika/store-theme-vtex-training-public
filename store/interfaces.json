@@ -4,5 +4,8 @@
   },
   "footer-mobile": {
     "component": "FooterMobile"
+  },
+  "contact-us-list": {
+    "component": "ContactUsList"
   }
 }
