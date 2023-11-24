@@ -11,7 +11,7 @@ query getDocuments(
     schema: $schema
     page: $page
     pageSize: $pageSize
-  )  {
+  ) @context(provider: "vtex.store-graphql"){
     fields {
       value
       key

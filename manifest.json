@@ -64,10 +64,24 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
-    "vtex.store-graphql": "2.x"
+    "vtex.file-manager-graphql": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.apps-graphql": "3.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"
+  },
+  "settingsSchema": {
+    "title": "Key Manager-Akshay",
+    "type": "object",
+    "access": "public",
+    "properties": {
+      "recaptchaKey": {
+        "title": "ReCAPTCHA",
+        "description": "Provide google ReCAPTCHA site Key",
+        "type": "string"
+      }
+    }
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
