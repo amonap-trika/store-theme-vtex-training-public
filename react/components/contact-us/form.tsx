@@ -104,10 +104,13 @@ const ContactUsForm = () => {
                     account: "trika",
                     acronym: "AM"
                 }
+            }).then((e)=>{
+                console.log(e); // This will give an docuement id in return
+                if (formData !== undefined) {
+                    setFormData({...intialFormData})
+                }
             })
-            if (formData !== undefined) {
-                setFormData({...intialFormData})
-            }
+            
         } catch (err) {
             console.log(err)
             alert("This is some error, Please check console");

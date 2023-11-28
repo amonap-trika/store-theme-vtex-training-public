@@ -1,6 +1,8 @@
 {
   "vendor": "trika",
   "name": "store-theme-vtex-training",
+  "title": "Service Theme Vtex Training",
+  "description": "Service Theme Vtex Training",
   "version": "0.0.1",
   "builders": {
     "styles": "2.x",
@@ -72,7 +74,7 @@
     "vtex.reviews-and-ratings": "3.x"
   },
   "settingsSchema": {
-    "title": "Key Manager-Akshay",
+    "title": "Key Manager - ST Akshay",
     "type": "object",
     "access": "public",
     "properties": {

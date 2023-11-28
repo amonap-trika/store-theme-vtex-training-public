@@ -32,16 +32,16 @@ const ContactUsList = () => {
         setMessage('No more data is available to load');
         setSeeMoreStatus(false); 
         return;
-      }
-
-      data?.documents.map((row: any, rowInd : number)=> {
-        row.fields.map((col : any)=>{
-            if(!contactData[rowInd]) contactData[rowInd] = [];
-            contactData[rowInd][col.key] = col.value;
+      } else {
+        data?.documents.map((row: any, rowInd : number)=> {
+          row.fields.map((col : any)=>{
+              if(!contactData[rowInd]) contactData[rowInd] = [];
+              contactData[rowInd][col.key] = col.value;
+          });
         });
-      });
-
-      setContactListData([...contactListData,...contactData]);
+        
+        setContactListData([...contactListData,...contactData]);
+      }
     }
     if (error) {
       setSeeMoreStatus(false);
@@ -56,14 +56,14 @@ const ContactUsList = () => {
   }, [pageno]);
   
   const seeMoreData = ()=>{
-    pageno = pageno+1;
+    pageno += 1;
     setPageNo(pageno);
-    fetchContacts();
   }
 
   return (
     <div className='fl w-100 pb9'>
         <div className={`mw9 mr-auto ml-auto`}>
+          <h3 className='tc'>Contact us list (Using GraphQL)</h3>
           <table className='fl w-100' >
             <thead className='bg-rebel-pink c-danger--faded pa4 text-white'>
               <tr>
@@ -76,7 +76,7 @@ const ContactUsList = () => {
             </thead>
             <tbody>
               {contactListData && contactListData.map((item: any, index: any) => (
-                <tr key={index} className='bg-black-60 c-on-base--inverted text-white'>
+                <tr key={`cs-${index}`} className='bg-black-60 c-on-base--inverted text-white'>
                   <td className='tc'>{index+1}</td>
                   <td className='tc'>{item?.id}</td>
                   <td className='tc'>{item?.name}</td>
@@ -84,7 +84,7 @@ const ContactUsList = () => {
                   <td className='tc'>{item?.age}</td>
                 </tr>
               ))}
-              {(message || contactListData.length == 0) && (<tr key='error-or-no-data'>
+              {(message || contactListData.length == 0) && (<tr key='cs-error-or-no-data'>
                   <td className='tc' colSpan={5}>{message ? message : 'No data found' }</td>
                 </tr>
               )}
@@ -102,3 +102,4 @@ const ContactUsList = () => {
 
 
 export default ContactUsList
+

@@ -16,5 +16,9 @@
   },
   "contact-us-form": {
     "component": "ContactUsForm"
+  },
+  "Contact-us-list-using-Service" : {
+    "component": "ContactUsListUsingService"
   }
 }
+
