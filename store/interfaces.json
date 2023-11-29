@@ -1,0 +1,24 @@
+{
+  "footer-desktop": {
+    "component": "FooterDesktop"
+  },
+  "footer-mobile": {
+    "component": "FooterMobile"
+  },
+  "megamenu-desktop": {
+    "component": "MegamenuDesktop"
+  },
+  "megamenu-mobile": {
+    "component": "MegamenuMobile"
+  },
+  "contact-us-list": {
+    "component": "ContactUsList"
+  },
+  "contact-us-form": {
+    "component": "ContactUsForm"
+  },
+  "Contact-us-list-using-Service" : {
+    "component": "ContactUsListUsingService"
+  }
+}
+

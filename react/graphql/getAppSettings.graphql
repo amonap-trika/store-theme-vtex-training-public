@@ -1,0 +1,5 @@
+query AppSettings($version: String) {
+  publicSettingsForApp(app: "trika.store-theme-vtex-training", version: $version) @context(provider: "vtex.apps-graphql") {
+   message
+  }
+}
